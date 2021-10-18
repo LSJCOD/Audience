@@ -1,0 +1,106 @@
+//Request: 'POST', url: 'api/Category/all'
+
+[
+  {
+    'id': 1,
+    'name': 'cat1',
+    'description': 'test category',
+    'audiences': []
+  }
+
+
+  //Request: 'POST', url: 'api/Audience/all'
+
+
+
+  {
+    'id': 1,
+    'name': 'Aula magna',
+    'owner': 'Usa',
+    'capacity': 450,
+    'description': 'Aula magna',
+    'category': {
+      'id': 1,
+      'name': 'cat1',
+      'description': 'test category'
+    },
+    'messages': [],
+    'reservations': []
+  }
+
+
+  //  Request: 'POST', url: 'api/Client/all'
+
+
+  {
+    'idClient': 1,
+    'email': 'agustin@gmail.com',
+    'password': 'agustin123',
+    'name': 'Agustin Parra',
+    'age': 18,
+    'messages': [],
+    'reservations': []
+  },
+  //  Request: 'POST', url: 'api/Message/all'
+
+
+
+  {
+    'idMessage': 1,
+    'messageText': 'Me gusta.',
+    'audience': {
+      'id': 1,
+      'name': 'Aula magna',
+      'owner': 'Usa',
+      'capacity': 450,
+      'description': 'Aula magna',
+      'category': {
+        'id': 1,
+        'name': 'cat1',
+        'description': 'test category'
+      }
+    },
+    'client': {
+      'idClient': 1,
+      'email': 'agustin@gmail.com',
+      'password': 'agustin123',
+      'name': 'Agustin Parra',
+      'age': 18
+    }
+  },
+  //  Request: 'POST', url: 'api/Reservation/all'
+
+
+  {
+    'idReservation': 1,
+    'startDate': '2020-12-20T00:00:00.000+00:00',
+    'devolutionDate': '2020-12-20T00:00:00.000+00:00',
+    'status': 'created',
+    'audience': {
+      'id': 1,
+      'name': 'Aula magna',
+      'owner': 'Usa',
+      'capacity': 450,
+      'description': 'Aula magna',
+      'category': {
+        'id': 1,
+        'name': 'cat1',
+        'description': 'test category'
+      },
+      'messages': [
+        {
+          'idMessage': 1,
+          'messageText': 'Me gusta.'
+        }
+      ]
+    },
+    'client': {
+      'idClient': 1,
+      'email': 'agustin@gmail.com',
+      'password': 'agustin123',
+      'name': 'Agustin Parra',
+      'age': 18
+    },
+    'score': None
+  }
+]

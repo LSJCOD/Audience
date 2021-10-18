@@ -1,0 +1,36 @@
+-Creación de tipos (endpoint: /api/Category/save).
+-Visualización de Tipos (endpoint: /api/Category/all).
+
+
+-Creación de Auditorio (endpoint: /api/Audience/save).
+-Visualización de Auditorio (endpoint: /api/Audience/all).
+
+
+-Creación de Clientes (endpoint: /api/Client/save).
+-Visualización de Clientes (endpoint: /api/Client/all).
+
+
+- Creación de Mensajes (endpoint: /api/Message/save).
+- Visualización de Mensajes (endpoint: /api/Message/all).
+
+
+-Creación de Reservas. (endpoint: /api/Reservation/save).
+-Visualización de Reservas con sus calificaciones. (endpoint: /api/Reservation/all).
+
+
+
+-Calificación de las reservas. (endpoint: /api/Score/save).
+
+
+-Creación de usuarios administrativos. (endpoint: /api/Admin/save).
+-Visualización de usuarios administrativos. (endpoint: /api/Admin/all).
+
+
+
+
+
+
+
+
+
+
