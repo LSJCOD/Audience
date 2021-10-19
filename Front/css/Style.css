@@ -1,0 +1,83 @@
+*{
+
+}
+
+header {
+    position: relative;
+    margin: auto;
+    width: auto;
+    height: 80px;
+    background: antiquewhite;
+    text-align: center;
+}
+
+
+
+
+footer {
+    position: relative;
+    margin: 20px auto;
+    width: auto;
+    height: 70px;
+    background: #888;
+}
+
+
+
+#top ul li{
+    margin: auto;
+    float: left;
+    width: 20%;
+    height: 20px;
+    /*background: brown;*/
+    color: white;
+}
+
+
+
+div.Tabla{
+
+    margin: auto;
+    width: 50%;
+    position: relative;
+    text-align: center;
+    top: 14cm;
+    /*background: lightgray;*/
+
+
+}
+
+
+
+/*Nuevo*/
+div.Formularias {
+
+    text-align: center;
+    width: auto;
+    height: 450px;
+    background: darkolivegreen;
+    margin: 10px;
+    border-radius: 10%;
+    padding-bottom: 10px;
+}
+
+input{
+    margin: auto;
+    width: 80%;
+    height: 10%;
+}
+
+
+table,tr,th{
+    margin: auto;
+    border-collapse: collapse;
+    border: black solid;
+
+}
+
+/*div.Tables{*/
+/*    top: 10cm;*/
+/*    right: 10cm;*/
+/*    background: aqua;*/
+
+/*}*/

@@ -25,7 +25,7 @@ public class Audience implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "categoryId")
-    @JsonIgnoreProperties("audience")
+    @JsonIgnoreProperties("audiences")
     private Category category;
 
     @OneToMany(cascade = {CascadeType.PERSIST},mappedBy = "audience")
