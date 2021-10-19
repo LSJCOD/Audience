@@ -11,7 +11,7 @@ import com.example.auditorio.Category.Category;
 import com.example.auditorio.Message.Message;
 import com.example.auditorio.Reservation.Reservation;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import javax.persistence.*;
+import javax.persistence.*; //requerid
 import java.io.Serializable;
 import java.util.List;
 
