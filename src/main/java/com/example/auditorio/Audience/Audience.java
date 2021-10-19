@@ -34,10 +34,25 @@ public class Audience implements Serializable {
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    /**
+     * Contiene el id del auditorio
+     */
     private Integer id;
+    /**
+     * Contiene el nombre del auditorio
+     */
     private String name;
+    /**
+     * Contiene la categoria del auditorio
+     */
     private String owner;
+    /**
+     * Contiene la capacidad del auditorio
+     */
     private Integer capacity;
+    /**
+     * Contiene la descripcion del auditorio
+     */
     private String description;
 
     /**
