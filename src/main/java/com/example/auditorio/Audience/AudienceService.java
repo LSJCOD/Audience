@@ -23,8 +23,8 @@ public class AudienceService {
         if (audience.getId() == null) {
             return metodosCrud.save(audience);
         } else {
-            Optional<Audience> e = metodosCrud.getAudience(audience.getId());
-            if (e.isEmpty()) {
+            Optional<Audience> data = metodosCrud.getAudience(audience.getId());
+            if (data.isEmpty()) {
                 return metodosCrud.save(audience);
             } else {
                 return audience;
@@ -35,25 +35,22 @@ public class AudienceService {
 
     public Audience update(Audience audience){
         if(audience.getId()!=null){
-            Optional<Audience> e=metodosCrud.getAudience(audience.getId());
-            if(!e.isEmpty()){
+            Optional<Audience> data=metodosCrud.getAudience(audience.getId());
+            if(!data.isEmpty()){
                 if(audience.getName()!=null){
-                    e.get().setName(audience.getName());
+                    data.get().setName(audience.getName());
                 }
                 if(audience.getOwner()!=null){
-                    e.get().setOwner(audience.getOwner());
+                    data.get().setOwner(audience.getOwner());
                 }
-                if(audience.getCategory()!=null){
-                    e.get().setCategory(audience.getCategory());
+                if(audience.getCapacity()!=null){
+                    data.get().setCapacity(audience.getCapacity());
                 }
                 if(audience.getDescription()!=null){
-                    e.get().setDescription(audience.getDescription());
+                    data.get().setDescription(audience.getDescription());
                 }
-                if(audience.getCategory()!=null){
-                    e.get().setCategory(audience.getCategory());
-                }
-                metodosCrud.save(e.get());
-                return e.get();
+                metodosCrud.save(data.get());
+                return data.get();
             }else{
                 return audience;
             }
